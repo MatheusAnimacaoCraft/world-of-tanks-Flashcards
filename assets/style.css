@@ -8,7 +8,7 @@
 
 body {
     font-family: Bai Jamjuree;
-    background-image: url('img/og-image.jpg');
+    background-image: url('img/og-image');
     background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-color: var(--card-preto);
