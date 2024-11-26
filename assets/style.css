@@ -1,0 +1,154 @@
+:root {
+    --text-color: #DBE4EF;
+    --card-front-color: #144480;
+    --card-back-color: #ff0000;
+    --card-color: #00F4BF;
+    --card-preto: #000000;
+}
+
+body {
+    font-family: Bai Jamjuree;
+    background-image: url('/img/og-image.jpg');
+    background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: var(--card-preto);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4em;
+    gap: 3rem;
+}
+
+.cartao {
+    margin: 1em 1em;
+    height: 20em;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao_conteudo {
+    background-image: url('/img/tanqueX.jpg');
+    background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: rgba(61, 61, 61, 0.5); /* Cor de fundo semitransparente */
+    background-blend-mode: overlay; /* Mistura a imagem com a cor de fundo */
+    text-align: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+.desenvolvido {
+    background-color: rgba(0, 0, 0, 0.537);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.desenvolvido_texto {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.cartao_conteudo h3 {
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    text-align: left;
+    padding: 0.5em;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius:0.6em ;
+    font-size: 1vw;
+    backface-visibility: hidden;
+}
+
+.cartao_conteudo p {
+    text-align: center;
+    height: 100%;
+    margin-top: 1em;
+    padding: 2em;
+    margin-top: 4em;
+}
+
+.cartao_conteudo_perguta p{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao_conteudo_respota p{
+    color: var(--card-color);
+    font-weight: 700;
+}
+
+.cartao_conteudo_perguta,
+.cartao_conteudo_respota{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao_conteudo_respota {
+    transform: rotateY(180deg);
+}
+
+
+
+.cartao.active .cartao_conteudo {
+    transform: rotateY(180deg);
+    background-image: url('/img/tanquewarge.jpg');
+    background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-color: rgba(61, 61, 61, 0.5); /* Cor de fundo semitransparente */
+    background-blend-mode: overlay; /* Mistura a imagem com a cor de fundo */
+}
+
+.wargeming {
+    width: 3%;
+    margin-bottom: -49px;
+    padding-left: 1em;
+}
+
+@media screen and (max-width: 560px) {
+
+    body {
+        background: url('/img/tanqueX.jpg');
+        background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+        background-color: var(--card-preto);
+    }
+
+    .cartao {
+        flex: 1 0 calc(100% - 1em);
+    }
+
+    .cartao_conteudo h3 {
+        font-size: 3vw;
+    }
+
+    .cartao_conteudo p {
+        font-size: 3vw;
+    }
+
+    .wargeming {
+        width: 10%;
+        padding-bottom: -10em;
+    }
+
+    .desenvolvido_texto {
+        width: 50%;
+        padding-left: 30vw;
+    }
+}
+
+
+
+
+
