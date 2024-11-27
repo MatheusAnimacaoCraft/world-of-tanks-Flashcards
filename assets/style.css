@@ -8,7 +8,7 @@
 
 body {
     font-family: Bai Jamjuree;
-    background-image: url('img/og-image');
+    background-image: url('../img/og-image.jpg');
     background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-color: var(--card-preto);
@@ -30,7 +30,7 @@ body {
 }
 
 .cartao_conteudo {
-    background-image: url('/img/tanqueX.jpg');
+    background-image: url('../img/tanqueX.jpg');
     background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-color: rgba(61, 61, 61, 0.5); /* Cor de fundo semitransparente */
@@ -103,7 +103,7 @@ body {
 
 .cartao.active .cartao_conteudo {
     transform: rotateY(180deg);
-    background-image: url('/img/tanquewarge.jpg');
+    background-image: url('../img/tanquewarge.jpg');
     background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-color: rgba(61, 61, 61, 0.5); /* Cor de fundo semitransparente */
@@ -119,7 +119,7 @@ body {
 @media screen and (max-width: 560px) {
 
     body {
-        background: url('/img/tanqueX.jpg');
+        background: url('../img/tanqueX.jpg');
         background-size: cover; /* Para ajustar a imagem ao tamanho do cartão */
         background-repeat: no-repeat; /* Evita que a imagem se repita */
         background-color: var(--card-preto);
